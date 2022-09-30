@@ -54,7 +54,19 @@ export const ContainerLogin = styled('div', {
       fontSize: '1.25rem'
     },
 
+    div: {
+      display: 'flex',
+      position: 'relative',
+
+      img: {
+        position: 'absolute',
+        right: '1rem',
+        top: '0.8rem',
+      }
+    },
+
     input: {
+      flex: 1,
       padding: '0.625rem 0',
       paddingLeft: '1.25rem',
       borderRadius: 5,

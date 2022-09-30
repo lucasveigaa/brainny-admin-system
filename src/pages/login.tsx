@@ -1,8 +1,9 @@
 import Image from 'next/future/image';
 import Link from 'next/link';
-import { ContainerContent, ContainerLogin, HomeContainer } from "../../styles/pages/home";
+import { ContainerContent, ContainerLogin, HomeContainer } from "../../styles/pages/login";
 
 import imgHome from '../assets/home.png';
+import iconInput from '../assets/icon-input.svg';
 import imgLogo from '../assets/logo-azul.png';
 
 export default function Home() {
@@ -30,7 +31,11 @@ export default function Home() {
           <input type="email" id="email" placeholder='exemplo@email.com' />
 
           <label htmlFor="password">Senha</label>
-          <input type="password" id="password" placeholder='*************' />
+
+          <div>
+            <input type="password" id="password" placeholder='*************' />
+            <Image src={iconInput} alt="" />
+          </div>
 
           <Link href="/">Esqueci minha senha</Link>
 
