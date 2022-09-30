@@ -9,6 +9,7 @@ export const HeaderContainer = styled('aside', {
   maxWidth: 180,
   boxShadow: '0px 4px 10px rgba(0, 0, 0, 0.1)',
   height: '100vh',
+  backgroundColor: '#FFFFFF',
 })
 
 export const LogoContainer = styled('div', {
