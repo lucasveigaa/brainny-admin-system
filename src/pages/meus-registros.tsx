@@ -1,16 +1,18 @@
-import { ContainerDashboard, ContainerTable, ContentColaborator, SubContainerTable } from "../../styles/pages/dashboard";
+import { ContainerDashboard, ContainerTable, ContentColaborator, SubContainerTable } from "../../styles/pages/meusRegistros";
 import Header from "../components/Header";
 
+import iconMeusRegistros from '../assets/icon-meus-registros.svg';
 
-import iconDashboard from '../assets/icon-dashboard.svg';
 
-export default function Dashboard() {
+export default function MeusRegistros() {
   return (
     <ContainerDashboard>
 
-      <Header icon={iconDashboard} content='Dashboard' />
+      <Header icon={iconMeusRegistros} content="Meus registros" />
 
       <ContainerTable>
+
+        <button>Registrar ponto</button>
 
         <SubContainerTable>
           <strong>Colaborador</strong>

@@ -9,6 +9,22 @@ export const ContainerDashboard = styled('main', {
 export const ContainerTable = styled('div', {
   display: 'flex',
   flexDirection: 'column',
+
+  button: {
+    background: '$principalColor',
+    borderRadius: 5,
+    padding: '0.75rem 2.5rem',
+    width: 'fit-content',
+    color: '$white',
+    border: 0,
+    marginLeft: '1.875rem',
+    marginTop: '2rem',
+    cursor: 'pointer',
+
+    '&:hover': {
+      backgroundColor: '$secundaryColor',
+    },
+  }
 })
 
 export const SubContainerTable = styled('div', {
@@ -17,7 +33,7 @@ export const SubContainerTable = styled('div', {
   marginLeft: '1.875rem',
   paddingLeft: '1rem',
   marginBottom: '1rem',
-  marginTop: '4rem',
+  marginTop: '2rem',
 })
 
 export const ContentColaborator = styled('div',{

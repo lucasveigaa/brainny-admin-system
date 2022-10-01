@@ -6,7 +6,7 @@ export const HeaderContainer = styled('aside', {
   flexDirection: 'column',
   alignItems: 'center',
   position: 'relative',
-  maxWidth: 180,
+  width: 180,
   boxShadow: '0px 4px 10px rgba(0, 0, 0, 0.1)',
   height: '100vh',
   backgroundColor: '#FFFFFF',
@@ -21,13 +21,18 @@ export const IconContainer = styled('div', {
   borderTop: '1px solid rgba(0, 0, 0, 0.08)',
   borderBottom: '1px solid rgba(0, 0, 0, 0.08)',
   borderLeft: '4px solid $principalColor',
-  padding: '2.7rem 1.5rem',
+  padding: '2.7rem 0',
+  paddingLeft: '1.5rem',
+  width: 'stretch',
+
+  display: 'flex',
+  alignItems: 'center',
 
   color: '$principalColor',
   fontSize: '0.875rem',
   
   img: {
-    marginRight: '0.875rem',
+    marginRight: '0.625rem',
   }
 })
 
@@ -37,4 +42,5 @@ export const SignoutContainer = styled('div', {
   alignItems: 'center',
   position: 'absolute',
   bottom: '1.5rem',
+  gap: '0.75rem',
 })

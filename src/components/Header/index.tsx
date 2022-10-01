@@ -3,23 +3,27 @@ import Link from 'next/link';
 
 import { HeaderContainer, IconContainer, LogoContainer, SignoutContainer } from "./header";
 
-import iconDashboard from '../../assets/icon-dashboard.svg';
 import iconSair from '../../assets/icon-sair.svg';
-import imgLogo from '../../assets/logo-azul.png';
+import logoAzul from '../../assets/logo-azul.png';
 
-export default function Header() {
+interface HeaderProps {
+  icon: string;
+  content: string;
+}
+
+export default function Header({ icon, content }: HeaderProps) {
   return (
     <HeaderContainer>
 
       <LogoContainer>
-        <Image src={imgLogo} alt="" width={134} height={31} />
+        <Image src={logoAzul} alt="" width={134} height={31} />
       </LogoContainer>
 
       <Link href="/dashboard">
 
         <IconContainer>
-          <Image src={iconDashboard} alt="" />
-          <span>Dashboard</span>
+          <Image src={icon} alt="" />
+          <span>{content}</span>
         </IconContainer>
 
       </Link>
