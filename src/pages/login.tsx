@@ -12,7 +12,7 @@ export default function Home() {
 
       <ContainerContent>
 
-        <Image src={imgHome} width={585} height={663} alt="" />
+        <Image src={imgHome} width={500} height={600} alt="" />
 
         <h1>Bem vindo ao PontoGo</h1>
         <span>Aqui você fará toda gestão do

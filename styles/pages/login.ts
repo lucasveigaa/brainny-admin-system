@@ -4,8 +4,17 @@ import { styled } from "..";
 export const HomeContainer = styled('main', {
   display: 'flex',
   background: 'rgba(255, 255, 255, 0.7)',
-  padding: '2rem 9.375rem',
-  gap: '9.3rem',
+  padding: '1.5rem 9.375rem',
+  gap: '6rem',
+
+  
+  '@media (max-width: 1200px)': {
+    flexDirection: 'column',
+  },
+
+  '@media (max-width: 700px)': {
+    padding: '1rem',
+  },
 })
 
 export const ContainerContent = styled('div', {
@@ -16,6 +25,11 @@ export const ContainerContent = styled('div', {
 
   img: {
     objectFit: 'cover',
+
+    '@media (max-width: 700px)': {
+      width: '90%',
+      heigth: '90%'
+    }
   },
 
   h1: {
@@ -37,6 +51,13 @@ export const ContainerContent = styled('div', {
 
 export const ContainerLogin = styled('div', {
   margin: 'auto 0',
+
+  img: {
+    '@media (max-width: 700px)': {
+      width: '90%',
+      heigth: '90%'
+    }
+  },
 
   h1: {
     color: '$principalColor',
@@ -62,6 +83,12 @@ export const ContainerLogin = styled('div', {
         position: 'absolute',
         right: '1rem',
         top: '0.8rem',
+
+        '@media (max-width: 700px)': {
+          width: '16px',
+          heigth: '22px'
+        }
+        
       }
     },
 
