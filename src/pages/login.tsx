@@ -1,14 +1,15 @@
 import Image from 'next/future/image';
 import Link from 'next/link';
-import { ContainerContent, ContainerLogin, HomeContainer } from "../../styles/pages/login";
+import { ContainerContent, ContainerLogin, LoginContainer } from "../styles/pages/login";
 
 import imgHome from '../assets/home.png';
 import iconInput from '../assets/icon-input.svg';
 import imgLogo from '../assets/logo-azul.png';
 
 export default function Home() {
+
   return (
-    <HomeContainer>
+    <LoginContainer>
 
       <ContainerContent>
 
@@ -44,6 +45,6 @@ export default function Home() {
         </form>
       </ContainerLogin>
 
-    </HomeContainer>
+    </LoginContainer>
   )
 }

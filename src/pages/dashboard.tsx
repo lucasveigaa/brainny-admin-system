@@ -1,5 +1,5 @@
-import { ContainerDashboard, ContainerTable, ContentColaborator, SubContainerTable } from "../../styles/pages/dashboard";
 import Header from "../components/Header";
+import { ContainerDashboard, ContainerTable, ContentColaborator, SubContainerTable } from "../styles/pages/dashboard";
 
 
 import iconDashboard from '../assets/icon-dashboard.svg';

@@ -1,5 +1,5 @@
 import { AppProps } from "next/app";
-import { globalStyles } from '../../styles/global';
+import { globalStyles } from '../styles/global';
 
 import { ApolloProvider } from '@apollo/client';
 import { client } from '../config/client-graphql';

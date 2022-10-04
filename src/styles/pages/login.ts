@@ -1,7 +1,7 @@
 import { styled } from "..";
 
 
-export const HomeContainer = styled('main', {
+export const LoginContainer = styled('main', {
   display: 'flex',
   background: 'rgba(255, 255, 255, 0.7)',
   padding: '1.5rem 9.375rem',

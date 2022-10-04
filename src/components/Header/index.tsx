@@ -1,7 +1,7 @@
 import Image from 'next/future/image';
 import Link from 'next/link';
 
-import { HeaderContainer, IconContainer, LogoContainer, SignoutContainer } from "./header";
+import { HeaderContainer, IconContainer, LogoContainer, SignoutContainer } from "./styles";
 
 import iconSair from '../../assets/icon-sair.svg';
 import logoAzul from '../../assets/logo-azul.png';

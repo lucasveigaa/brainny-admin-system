@@ -1,5 +1,5 @@
-import { ContainerDashboard, ContainerTable, ContentColaborator, SubContainerTable } from "../../styles/pages/meusRegistros";
 import Header from "../components/Header";
+import { ContainerDashboard, ContainerTable, ContentColaborator, SubContainerTable } from "../styles/pages/meusRegistros";
 
 import iconMeusRegistros from '../assets/icon-meus-registros.svg';
 
