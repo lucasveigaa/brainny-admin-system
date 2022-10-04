@@ -1,9 +1,14 @@
-import Image from "next/image";
+import Image from "next/future/image";
 import HeaderHome from "../components/HeaderHome";
-import { Container, ContentContainer } from "../styles/pages/home";
+import { Container, ContentContainer, LogoCompanies } from "../styles/pages/home";
 
 import Link from "next/link";
+
 import imageHome from '../assets/image-home.png';
+import logoAmopet from '../assets/logo-amopet.png';
+import logoBrainny from '../assets/logo-brainny.png';
+import logoBus from '../assets/logo-bus.png';
+import logoGoStudy from '../assets/logo-gostudy.png';
 
 export default function Home() {
   return (
@@ -26,8 +31,17 @@ export default function Home() {
           </Link>
         </div>
         <Image src={imageHome} alt="Homem com óculos de realidade virtual flutuando com um foguete, 
-        calendário e notebook por perto." />
+          calendário e notebook por perto." />
+
       </ContentContainer>
+
+      <LogoCompanies>
+        <Image src={logoBrainny} alt="Logo da Brainny" />
+        <Image src={logoAmopet} alt="Logo da Amo Pet" />
+        <Image src={logoBus} alt="Logo da .Bus" />
+        <Image width={283} height={74} src={logoGoStudy} alt="Logo da Go Study" />
+      </LogoCompanies>
+
     </Container>
   )
 }

@@ -15,10 +15,19 @@ export const Container = styled('div', {
 })  
 
 export const ContentContainer = styled('div', {
-  display: 'flex',
-  marginTop: '3rem',
+  marginTop: '2rem',
+  display: 'grid',
+  gridTemplateColumns: '1fr 1fr',
+  gridAutoFlow: 'dense',
+
+  '@media (max-width: 850px)': {
+    alignItems: 'center',
+    gridTemplateColumns: '1fr',
+  },
+
 
   div: {
+    margin: 'auto 0',
 
     span:{
       fontWeight: 300,
@@ -70,6 +79,11 @@ export const ContentContainer = styled('div', {
         border: '1px solid $secundaryColor',
       },
     }
-
   }
+})
+
+export const LogoCompanies = styled('div', {
+  display: 'flex',
+  justifyContent: 'space-evenly',
+  alignItems: 'center',
 })
